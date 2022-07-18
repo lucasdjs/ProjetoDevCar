@@ -1,0 +1,10 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = DEV_Car
+build_property.ProjectDir = C:\Users\lucas_7p11azf\OneDrive\Documentos\Csharp\Devinhouse\Semana 3\DEV-Car\DEV-Car\DEV-Car\
