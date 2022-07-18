@@ -48,6 +48,20 @@ namespace DEV_Car.Veiculo.Relatorio
                     Console.Clear();
                     MenuPrincipal.Mostrar();
                     break;
+                case 3:
+                    MenuPrincipal.DrawCanvas();
+                    MotosVendidosValorMaior();
+                    Console.Clear();
+                    MenuPrincipal.Mostrar();
+                    break;
+                case 4:
+                    MenuPrincipal.DrawCanvas();
+                    MotosVendidosValorMenor();
+                    Console.Clear();
+                    MenuPrincipal.Mostrar();
+                    break;
+
+
             }
 
         }
@@ -77,9 +91,9 @@ namespace DEV_Car.Veiculo.Relatorio
         {
             Veiculos veiculos = new Veiculos();
 
-            if (VeiculoRepositorio.ListVeiculos.Count != 0)
+            if (VeiculoRepositorio.ListVeiculosVendidos.Count != 0)
             {
-                veiculos.ListarInformacoesVendido("Motos");
+                veiculos.ListarInformacoesVendidoMoto("Motos");
             }
             else
             {
@@ -91,5 +105,57 @@ namespace DEV_Car.Veiculo.Relatorio
                 Console.ReadLine();
             }
         }
+
+        private void CamionetesVendidos()
+        {
+            Veiculos veiculos = new Veiculos();
+
+            if (VeiculoRepositorio.ListVeiculosVendidos.Count != 0)
+            {
+                veiculos.ListarInformacoesVendido("Camionete");
+            }
+            else
+            {
+                MenuPrincipal.DrawCanvas();
+                Console.SetCursorPosition(2, 2);
+                Console.WriteLine("Não há veículos para listar!");
+                Console.SetCursorPosition(2, 5);
+                Console.Write("Digite 'Enter' para continuar: ");
+                Console.ReadLine();
+            }
+        }
+
+        private void MotosVendidosValorMaior()
+        {
+            for (int i = 0; i < VeiculoRepositorio.ListVeiculosVendidos.Count; i++)
+            {
+                var item = VeiculoRepositorio.ListMotosVendidos;
+                Console.SetCursorPosition(2, 1);
+                Console.WriteLine("Veiculo vendido de maior valor:");
+                Console.SetCursorPosition(2, 3);
+                Console.Write("Nome: ");
+                Console.SetCursorPosition(2, 4);
+                Console.Write(item.Max().Nome);
+            }
+            Console.ReadLine();
+
+        }
+        private void MotosVendidosValorMenor()
+        {
+            for (int i = 0; i < VeiculoRepositorio.ListVeiculosVendidos.Count; i++)
+            {
+                var item = VeiculoRepositorio.ListMotosVendidos;
+                Console.SetCursorPosition(2, 1);
+                Console.WriteLine("Veiculo vendido de menor valor:");
+                Console.SetCursorPosition(2, 2);
+                Console.Write("Nome: ");
+                Console.SetCursorPosition(2, 3);
+                Console.Write(item.Min().Nome);
+            }
+            Console.ReadLine();
+
+        }
+
+
     }
 }

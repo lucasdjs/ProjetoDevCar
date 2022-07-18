@@ -13,3 +13,18 @@ C:\Users\lucas_7p11azf\OneDrive\Documentos\Csharp\Devinhouse\Semana 3\DEV-Car\DE
 C:\Users\lucas_7p11azf\OneDrive\Documentos\Csharp\Devinhouse\Semana 3\DEV-Car\DEV-Car\DEV-Car\obj\Debug\net6.0\DEV-Car.pdb
 C:\Users\lucas_7p11azf\OneDrive\Documentos\Csharp\Devinhouse\Semana 3\DEV-Car\DEV-Car\DEV-Car\obj\Debug\net6.0\DEV-Car.genruntimeconfig.cache
 C:\Users\lucas_7p11azf\OneDrive\Documentos\Csharp\Devinhouse\Semana 3\DEV-Car\DEV-Car\DEV-Car\obj\Debug\net6.0\ref\DEV-Car.dll
+C:\ProjetoDev-Car\ProjetoDevCar\DEV-Car\bin\Debug\net6.0\DEV-Car.exe
+C:\ProjetoDev-Car\ProjetoDevCar\DEV-Car\bin\Debug\net6.0\DEV-Car.deps.json
+C:\ProjetoDev-Car\ProjetoDevCar\DEV-Car\bin\Debug\net6.0\DEV-Car.runtimeconfig.json
+C:\ProjetoDev-Car\ProjetoDevCar\DEV-Car\bin\Debug\net6.0\DEV-Car.dll
+C:\ProjetoDev-Car\ProjetoDevCar\DEV-Car\bin\Debug\net6.0\DEV-Car.pdb
+C:\ProjetoDev-Car\ProjetoDevCar\DEV-Car\obj\Debug\net6.0\DEV-Car.csproj.AssemblyReference.cache
+C:\ProjetoDev-Car\ProjetoDevCar\DEV-Car\obj\Debug\net6.0\DEV-Car.GeneratedMSBuildEditorConfig.editorconfig
+C:\ProjetoDev-Car\ProjetoDevCar\DEV-Car\obj\Debug\net6.0\DEV-Car.AssemblyInfoInputs.cache
+C:\ProjetoDev-Car\ProjetoDevCar\DEV-Car\obj\Debug\net6.0\DEV-Car.AssemblyInfo.cs
+C:\ProjetoDev-Car\ProjetoDevCar\DEV-Car\obj\Debug\net6.0\DEV-Car.csproj.CoreCompileInputs.cache
+C:\ProjetoDev-Car\ProjetoDevCar\DEV-Car\obj\Debug\net6.0\DEV-Car.dll
+C:\ProjetoDev-Car\ProjetoDevCar\DEV-Car\obj\Debug\net6.0\refint\DEV-Car.dll
+C:\ProjetoDev-Car\ProjetoDevCar\DEV-Car\obj\Debug\net6.0\DEV-Car.pdb
+C:\ProjetoDev-Car\ProjetoDevCar\DEV-Car\obj\Debug\net6.0\DEV-Car.genruntimeconfig.cache
+C:\ProjetoDev-Car\ProjetoDevCar\DEV-Car\obj\Debug\net6.0\ref\DEV-Car.dll

@@ -117,7 +117,54 @@ namespace DEV_Car.Veiculo.Models
             Console.Write("Digite enter para continuar");
             Console.ReadLine();
         }
+        public void ListarInformacoesVendidoMoto(string nome)
+        {
+            MenuPrincipal aumentarLinhas = new MenuPrincipal();
+            aumentarLinhas.DrawCanvas(linhasVenda);
+            Console.SetCursorPosition(2, 2);
+            Console.WriteLine($"{nome} Vendidas: ");
 
+            foreach (var item in VeiculoRepositorio.ListMotosVendidos)
+            {
+                Console.SetCursorPosition(2, linha);
+                Console.WriteLine("Nome: " + item.Nome + " | Cor: " + item.Cor + " | Valor: " + item.Valor.ToString("C"));
+                Console.SetCursorPosition(2, linha + 1);
+                Console.WriteLine("Ano de Fabricação: " + item.DataFabricacao.Year + " | CPF Comprador: " + item.CPFComprador);
+
+                linha = linha + 2;
+                Console.SetCursorPosition(2, linha);
+                linhasVenda++;
+                linha++;
+            }
+
+            Console.SetCursorPosition(2, linha + 4);
+            Console.Write("Digite enter para continuar");
+            Console.ReadLine();
+        }
+        public void ListarInformacoesVendidoCarro(string nome)
+        {
+            MenuPrincipal aumentarLinhas = new MenuPrincipal();
+            aumentarLinhas.DrawCanvas(linhasVenda);
+            Console.SetCursorPosition(2, 2);
+            Console.WriteLine($"{nome} Vendidas: ");
+
+            foreach (var item in VeiculoRepositorio.ListCarrosVendidos)
+            {
+                Console.SetCursorPosition(2, linha);
+                Console.WriteLine("Nome: " + item.Nome + " | Cor: " + item.Cor + " | Valor: " + item.Valor.ToString("C"));
+                Console.SetCursorPosition(2, linha + 1);
+                Console.WriteLine("Ano de Fabricação: " + item.DataFabricacao.Year + " | CPF Comprador: " + item.CPFComprador);
+
+                linha = linha + 2;
+                Console.SetCursorPosition(2, linha);
+                linhasVenda++;
+                linha++;
+            }
+
+            Console.SetCursorPosition(2, linha + 4);
+            Console.Write("Digite enter para continuar");
+            Console.ReadLine();
+        }
 
 
 

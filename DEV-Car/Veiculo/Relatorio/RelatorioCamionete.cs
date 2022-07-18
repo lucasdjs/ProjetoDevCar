@@ -54,6 +54,12 @@ namespace DEV_Car.Veiculo.Relatorio
                     Console.Clear();
                     MenuPrincipal.Mostrar();
                     break;
+                case 4:
+                    MenuPrincipal.DrawCanvas();
+                    CamionetesVendidosValorMenor();
+                    Console.Clear();
+                    MenuPrincipal.Mostrar();
+                    break;
 
             }
 
@@ -101,13 +107,35 @@ namespace DEV_Car.Veiculo.Relatorio
 
         private void CamionetesVendidosValorMaior()
         {
-            foreach (var item in VeiculoRepositorio.ListCamioneteVendidos)
+            for (int i = 0; i < VeiculoRepositorio.ListVeiculosVendidos.Count; i++)
             {
-                Console.WriteLine(item.Valor) ;
-
+                var item = VeiculoRepositorio.ListCamioneteVendidos;
+                Console.SetCursorPosition(2, 1);
+                Console.WriteLine("Veiculo vendido de maior valor:");
+                Console.SetCursorPosition(2, 3);
+                Console.Write("Nome: ");
+                Console.SetCursorPosition(2, 4);
+                Console.Write(item.Max().Nome);
             }
+            Console.ReadLine();
 
         }
+        private void CamionetesVendidosValorMenor()
+        {
+            for (int i = 0; i < VeiculoRepositorio.ListVeiculosVendidos.Count; i++)
+            {
+                var item = VeiculoRepositorio.ListCamioneteVendidos;
+                Console.SetCursorPosition(2, 1);
+                Console.WriteLine("Veiculo vendido de menor valor:");
+                Console.SetCursorPosition(2, 2);
+                Console.Write("Nome: ");
+                Console.SetCursorPosition(2, 3);
+                Console.Write(item.Min().Nome);
+            }
+            Console.ReadLine();
+
+        }
+
 
 
 
